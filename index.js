@@ -23,7 +23,7 @@ const urls = {
 
 const fetch = (...args) => import('node-fetch').then(async ({default: fetch}) => (await fetch(...args)).json());
 
-let cookie = `_|WARNING:-DO-NOT-SHARE-THIS.--Sharing-this-will-allow-someone-to-log-in-as-you-and-to-steal-your-ROBUX-and-items.|_D4196418564E49E382322DE8B80FC248A660D3E488185BC32E5EFB2AA46F6D438CA44BE031D61B980F447B00F3B17C27B6B5FB5A98B4874BD3206E08B7875E1BCF0709C78E41E4A019FBE4A8CEF4FE061C2ECC1B5A728944C8AD0C04932292C996DD797FB36FACD9CFA3CCEE4DB41D407167667DD882EB4A305FC1C08ABDF0AFC45B9E3FBD0B601340805D9C308B0EC8E39B447C74372C351C259421D135D0E6B8C5780CE31D01D4AE322911832AEB39253310D4EE303464C75CA0EA896F44BA0913972FF12BD97708DF24B6B2545B291B3F6B8D0D21A21B5880A2085FB32586FA1B5A185A1B2F1827FA640E9F926B55FB1813AE10AADBA83105DDCD3C71F0DDFB9D902BE7EB7941FF242C78027F0CC3A2987A51DC1745EBA7164253C5A896DCBBCD180FA769854D2CE94C0A00E6A9F631BA00BD3BA95F54CB3D561D14623050CE60594A`
+let cookie = `_|WARNING`
 
 async function automate() {
     const getGiveaways = await fetch(urls.giveaways.url, {
@@ -75,7 +75,7 @@ async function automate() {
 
                 console.log(join);
 
-                await fetch(`https://ptb.discord.com/api/webhooks/936478094016012319/sKA5xOHHfOT0PrZzNvzW-0J6Q7-Pg9oUx22XJzsoXaXilReYoHaOSLUMIfa1Hml6C07a`, {
+                await fetch(`https://discord.com/api/webhooks/`, {
                     method: "POST",
                     headers: {
                         'Content-Type': 'application/json',
@@ -92,7 +92,7 @@ async function automate() {
                     }
                 });
 
-                await fetch(`https://ptb.discord.com/api/webhooks/936478094016012319/sKA5xOHHfOT0PrZzNvzW-0J6Q7-Pg9oUx22XJzsoXaXilReYoHaOSLUMIfa1Hml6C07a`, {
+                await fetch(`https://discord.com/api/webhooks/`, {
                     method: "POST",
                     headers: {
                         'Content-Type': 'application/json',
@@ -125,7 +125,7 @@ automate()
 .catch(async (err) => {
     console.log(err);
 
-    await fetch(`https://ptb.discord.com/api/webhooks/936478094016012319/sKA5xOHHfOT0PrZzNvzW-0J6Q7-Pg9oUx22XJzsoXaXilReYoHaOSLUMIfa1Hml6C07a`, {
+    await fetch(`https://discord.com/api/webhooks/`, {
         method: "POST",
         headers: {
             'Content-Type': 'application/json',
